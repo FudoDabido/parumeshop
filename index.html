@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essence of Arabia - Luxury Perfumes & Custom Fragrances</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-spray-can-sparkles"></i>
+                    <span>Essence of Arabia</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#collections" class="nav-link">Collections</a></li>
+                    <li><a href="#create" class="nav-link">Create Your Perfume</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <button class="icon-btn search-btn"><i class="fas fa-search"></i></button>
+                    <button class="icon-btn cart-btn">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <button class="icon-btn user-btn"><i class="fas fa-user"></i></button>
+                    <button class="mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Your Signature Scent</h1>
+            <p class="hero-subtitle">Luxury Arabian perfumes crafted with passion and tradition</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Shop Collection</button>
+                <button class="btn btn-outline">Create Custom Perfume</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-bottle bottle-1"></div>
+            <div class="floating-bottle bottle-2"></div>
+            <div class="floating-bottle bottle-3"></div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section id="collections" class="collections">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Exclusive Collections</h2>
+                <p class="section-subtitle">Explore our carefully curated fragrance families</p>
+            </div>
+            <div class="collection-grid">
+                <div class="collection-card">
+                    <div class="collection-image oud-collection"></div>
+                    <h3>Royal Oud</h3>
+                    <p>Timeless woody fragrances with precious oud</p>
+                    <button class="btn-explore">Explore <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-image floral-collection"></div>
+                    <h3>Desert Bloom</h3>
+                    <p>Delicate floral bouquets inspired by oasis gardens</p>
+                    <button class="btn-explore">Explore <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-image oriental-collection"></div>
+                    <h3>Oriental Nights</h3>
+                    <p>Exotic spices and warm amber notes</p>
+                    <button class="btn-explore">Explore <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-image fresh-collection"></div>
+                    <h3>Fresh Breeze</h3>
+                    <p>Light and refreshing citrus compositions</p>
+                    <button class="btn-explore">Explore <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Perfume Creator -->
+    <section id="create" class="perfume-creator">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Create Your Signature Perfume</h2>
+                <p class="section-subtitle">Blend your perfect fragrance with our unique three-layer system</p>
+            </div>
+
+            <div class="creator-container">
+                <div class="creator-steps">
+                    <div class="step active" data-step="1">
+                        <div class="step-number">1</div>
+                        <span>Top Notes</span>
+                    </div>
+                    <div class="step" data-step="2">
+                        <div class="step-number">2</div>
+                        <span>Heart Notes</span>
+                    </div>
+                    <div class="step" data-step="3">
+                        <div class="step-number">3</div>
+                        <span>Base Notes</span>
+                    </div>
+                    <div class="step" data-step="4">
+                        <div class="step-number">4</div>
+                        <span>Review</span>
+                    </div>
+                </div>
+
+                <div class="creator-content">
+                    <!-- Step 1: Top Notes -->
+                    <div class="step-content active" id="step1">
+                        <h3>Select Your Top Notes</h3>
+                        <p>These are the first scents you'll notice - fresh and light</p>
+                        <div class="fragrance-options">
+                            <div class="fragrance-card" data-layer="top" data-scent="bergamot">
+                                <div class="fragrance-icon">🍋</div>
+                                <h4>Bergamot</h4>
+                                <p>Fresh, citrusy, slightly floral</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                            <div class="fragrance-card" data-layer="top" data-scent="orange">
+                                <div class="fragrance-icon">🍊</div>
+                                <h4>Sweet Orange</h4>
+                                <p>Bright, sweet, energizing</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                            <div class="fragrance-card" data-layer="top" data-scent="lavender">
+                                <div class="fragrance-icon">💜</div>
+                                <h4>Lavender</h4>
+                                <p>Calming, herbal, clean</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                            <div class="fragrance-card" data-layer="top" data-scent="mint">
+                                <div class="fragrance-icon">🌿</div>
+                                <h4>Fresh Mint</h4>
+                                <p>Cool, refreshing, invigorating</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                            <div class="fragrance-card" data-layer="top" data-scent="grapefruit">
+                                <div class="fragrance-icon">🍇</div>
+                                <h4>Pink Grapefruit</h4>
+                                <p>Zesty, uplifting, vibrant</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                            <div class="fragrance-card" data-layer="top" data-scent="cardamom">
+                                <div class="fragrance-icon">✨</div>
+                                <h4>Cardamom</h4>
+                                <p>Spicy, warm, exotic</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Heart Notes -->
+                    <div class="step-content" id="step2">
+                        <h3>Select Your Heart Notes</h3>
+                        <p>The soul of your perfume - these notes define its character</p>
+                        <div class="fragrance-options">
+                            <div class="fragrance-card" data-layer="heart" data-scent="rose">
+                                <div class="fragrance-icon">🌹</div>
+                                <h4>Damascus Rose</h4>
+                                <p>Romantic, deep, luxurious</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                            <div class="fragrance-card" data-layer="heart" data-scent="jasmine">
+                                <div class="fragrance-icon">🌸</div>
+                                <h4>Arabian Jasmine</h4>
+                                <p>Sweet, intoxicating, exotic</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                            <div class="fragrance-card" data-layer="heart" data-scent="saffron">
+                                <div class="fragrance-icon">🌾</div>
+                                <h4>Saffron</h4>
+                                <p>Warm, spicy, leathery</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                            <div class="fragrance-card" data-layer="heart" data-scent="neroli">
+                                <div class="fragrance-icon">🌼</div>
+                                <h4>Orange Blossom</h4>
+                                <p>Delicate, honeyed, refined</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                            <div class="fragrance-card" data-layer="heart" data-scent="iris">
+                                <div class="fragrance-icon">💠</div>
+                                <h4>Iris Root</h4>
+                                <p>Powdery, elegant, soft</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                            <div class="fragrance-card" data-layer="heart" data-scent="geranium">
+                                <div class="fragrance-icon">🌺</div>
+                                <h4>Rose Geranium</h4>
+                                <p>Green, rosy, balanced</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Base Notes -->
+                    <div class="step-content" id="step3">
+                        <h3>Select Your Base Notes</h3>
+                        <p>The foundation - these deep notes linger the longest</p>
+                        <div class="fragrance-options">
+                            <div class="fragrance-card" data-layer="base" data-scent="oud">
+                                <div class="fragrance-icon">🪵</div>
+                                <h4>Royal Oud</h4>
+                                <p>Woody, balsamic, complex</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                            <div class="fragrance-card" data-layer="base" data-scent="amber">
+                                <div class="fragrance-icon">🔶</div>
+                                <h4>Golden Amber</h4>
+                                <p>Warm, sweet, resinous</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                            <div class="fragrance-card" data-layer="base" data-scent="musk">
+                                <div class="fragrance-icon">💎</div>
+                                <h4>White Musk</h4>
+                                <p>Clean, soft, sensual</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                            <div class="fragrance-card" data-layer="base" data-scent="sandalwood">
+                                <div class="fragrance-icon">🌳</div>
+                                <h4>Mysore Sandalwood</h4>
+                                <p>Creamy, smooth, sacred</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                            <div class="fragrance-card" data-layer="base" data-scent="vanilla">
+                                <div class="fragrance-icon">🍦</div>
+                                <h4>Madagascar Vanilla</h4>
+                                <p>Rich, comforting, gourmand</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                            <div class="fragrance-card" data-layer="base" data-scent="patchouli">
+                                <div class="fragrance-icon">🍂</div>
+                                <h4>Dark Patchouli</h4>
+                                <p>Earthy, mysterious, deep</p>
+                                <button class="select-btn">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Review -->
+                    <div class="step-content" id="step4">
+                        <h3>Your Custom Creation</h3>
+                        <div class="perfume-summary">
+                            <div class="perfume-bottle-preview">
+                                <div class="custom-bottle"></div>
+                            </div>
+                            <div class="perfume-details">
+                                <h4>Your Signature Blend</h4>
+                                <div class="blend-composition">
+                                    <div class="note-summary">
+                                        <span class="note-label">Top Note:</span>
+                                        <span class="note-value" id="selected-top">-</span>
+                                    </div>
+                                    <div class="note-summary">
+                                        <span class="note-label">Heart Note:</span>
+                                        <span class="note-value" id="selected-heart">-</span>
+                                    </div>
+                                    <div class="note-summary">
+                                        <span class="note-label">Base Note:</span>
+                                        <span class="note-value" id="selected-base">-</span>
+                                    </div>
+                                </div>
+                                <div class="perfume-options">
+                                    <div class="option-group">
+                                        <label>Bottle Size:</label>
+                                        <select class="bottle-size">
+                                            <option value="30ml">30ml - $89</option>
+                                            <option value="50ml" selected>50ml - $129</option>
+                                            <option value="100ml">100ml - $199</option>
+                                        </select>
+                                    </div>
+                                    <div class="option-group">
+                                        <label>Custom Label (Optional):</label>
+                                        <input type="text" placeholder="Your Name" class="custom-label">
+                                    </div>
+                                </div>
+                                <div class="price-display">
+                                    <span>Total Price:</span>
+                                    <span class="price-value">$129</span>
+                                </div>
+                                <button class="btn btn-primary btn-lg add-custom-to-cart">
+                                    <i class="fas fa-shopping-bag"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="creator-navigation">
+                    <button class="btn btn-outline" id="prevStep" disabled>Previous</button>
+                    <button class="btn btn-primary" id="nextStep">Next Step</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bestselling Products</h2>
+                <p class="section-subtitle">Our most beloved fragrances</p>
+            </div>
+
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="perfumes">Perfumes</button>
+                <button class="filter-btn" data-filter="oils">Oils</button>
+                <button class="filter-btn" data-filter="incense">Incense</button>
+                <button class="filter-btn" data-filter="gift-sets">Gift Sets</button>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card" data-category="perfumes">
+                    <div class="product-badge">Bestseller</div>
+                    <div class="product-image">
+                        <div class="product-bottle bottle-gold"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Midnight Oud</h4>
+                        <p class="product-description">Intense oud with rose and saffron</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(247)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$149</span>
+                            <span class="original-price">$189</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="perfumes">
+                    <div class="product-badge new">New</div>
+                    <div class="product-image">
+                        <div class="product-bottle bottle-rose"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Desert Rose</h4>
+                        <p class="product-description">Floral bouquet with amber base</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(189)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$129</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="oils">
+                    <div class="product-image">
+                        <div class="product-bottle bottle-oil"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Pure Oud Oil</h4>
+                        <p class="product-description">100% natural Cambodian oud</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(412)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$299</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="incense">
+                    <div class="product-image">
+                        <div class="product-bottle bottle-incense"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Royal Bakhoor</h4>
+                        <p class="product-description">Premium incense blend</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(156)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$79</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="gift-sets">
+                    <div class="product-badge">Limited Edition</div>
+                    <div class="product-image">
+                        <div class="product-bottle bottle-set"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Luxury Gift Collection</h4>
+                        <p class="product-description">3 signature fragrances set</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(98)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$399</span>
+                            <span class="original-price">$499</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="perfumes">
+                    <div class="product-image">
+                        <div class="product-bottle bottle-blue"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Ocean Breeze</h4>
+                        <p class="product-description">Fresh aquatic with citrus notes</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(134)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$99</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="perfumes">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-image">
+                        <div class="product-bottle bottle-gold"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Sultan's Reserve</h4>
+                        <p class="product-description">Royal oud with amber and musk</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(324)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$285</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="perfumes">
+                    <div class="product-image">
+                        <div class="product-bottle bottle-rose"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Arabian Nights</h4>
+                        <p class="product-description">Jasmine, saffron and sandalwood</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(267)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$165</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="oils">
+                    <div class="product-badge">Exclusive</div>
+                    <div class="product-image">
+                        <div class="product-bottle bottle-oil"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Black Oud Essence</h4>
+                        <p class="product-description">Aged Malaysian oud oil - 3ml</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(198)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$425</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="oils">
+                    <div class="product-image">
+                        <div class="product-bottle bottle-oil"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Amber Attar</h4>
+                        <p class="product-description">Pure amber oil concentrate - 6ml</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(176)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$145</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="oils">
+                    <div class="product-image">
+                        <div class="product-bottle bottle-oil"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Rose of Taif</h4>
+                        <p class="product-description">Saudi Arabian rose oil - 6ml</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(289)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$195</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="perfumes">
+                    <div class="product-badge new">New</div>
+                    <div class="product-image">
+                        <div class="product-bottle bottle-blue"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Azure Mist</h4>
+                        <p class="product-description">Light citrus with white musk</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(92)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$89</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="incense">
+                    <div class="product-image">
+                        <div class="product-bottle bottle-incense"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Oud Wood Chips</h4>
+                        <p class="product-description">Premium Cambodian oud - 50g</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(234)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$125</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="incense">
+                    <div class="product-image">
+                        <div class="product-bottle bottle-incense"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Musk Bakhoor</h4>
+                        <p class="product-description">White musk incense blend - 40g</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(187)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$65</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="perfumes">
+                    <div class="product-image">
+                        <div class="product-bottle bottle-rose"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Velvet Saffron</h4>
+                        <p class="product-description">Rich saffron with leather notes</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(213)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$175</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="gift-sets">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-image">
+                        <div class="product-bottle bottle-set"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Royal Collection</h4>
+                        <p class="product-description">5 signature perfumes - 50ml each</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(145)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$599</span>
+                            <span class="original-price">$750</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="gift-sets">
+                    <div class="product-image">
+                        <div class="product-bottle bottle-set"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Discovery Set</h4>
+                        <p class="product-description">8 sample vials - 5ml each</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(312)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$95</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="perfumes">
+                    <div class="product-badge">Bestseller</div>
+                    <div class="product-image">
+                        <div class="product-bottle bottle-gold"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Golden Dunes</h4>
+                        <p class="product-description">Amber, vanilla and precious woods</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(456)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$145</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="perfumes">
+                    <div class="product-image">
+                        <div class="product-bottle bottle-blue"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Mediterranean Breeze</h4>
+                        <p class="product-description">Sea salt, bergamot and driftwood</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(178)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$119</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="oils">
+                    <div class="product-badge new">New</div>
+                    <div class="product-image">
+                        <div class="product-bottle bottle-oil"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Musk Al Kashmir</h4>
+                        <p class="product-description">Kashmiri musk attar - 6ml</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(124)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$165</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="perfumes">
+                    <div class="product-image">
+                        <div class="product-bottle bottle-rose"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Silk & Spice</h4>
+                        <p class="product-description">Cardamom, silk accord and vanilla</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(201)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$139</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="incense">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-image">
+                        <div class="product-bottle bottle-incense"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Luxury Bakhoor Mix</h4>
+                        <p class="product-description">Oud, amber & rose blend - 60g</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(267)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$95</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="gift-sets">
+                    <div class="product-badge">Limited Edition</div>
+                    <div class="product-image">
+                        <div class="product-bottle bottle-set"></div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Heritage Collection</h4>
+                        <p class="product-description">Rare oud + incense gift box</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(89)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$750</span>
+                            <span class="original-price">$920</span>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h4>Free Worldwide Shipping</h4>
+                    <p>On orders over $200</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Authentic Products</h4>
+                    <p>100% genuine fragrances</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-gift"></i>
+                    <h4>Luxury Gift Wrapping</h4>
+                    <p>Complimentary on all orders</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-undo"></i>
+                    <h4>30-Day Returns</h4>
+                    <p>Hassle-free return policy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>Join Our Exclusive Circle</h3>
+                <p>Get early access to new collections and special offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Crafting exceptional fragrances that celebrate Arabian heritage and modern luxury.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Gift Sets</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@essenceofarabia.com</p>
+                    <p><i class="fas fa-phone"></i> +971 4 123 4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dubai, UAE</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Essence of Arabia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Shopping Cart</h3>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-price">$0</span>
+                </div>
+                <button class="btn btn-primary btn-block">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
