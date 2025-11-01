@@ -2,18 +2,19 @@
 :root {
     --primary-gold: #D4AF37;
     --secondary-gold: #FFD700;
-    --dark-purple: #2C1810;
-    --rich-brown: #4A2C2A;
-    --cream: #FFF8DC;
+    --dark-gold: #B8860B;
+    --black: #000000;
+    --dark-black: #0A0A0A;
     --white: #FFFFFF;
-    --black: #1A1A1A;
-    --gray: #666666;
-    --light-gray: #F5F5F5;
+    --cream: #FFF8DC;
+    --gray: #CCCCCC;
+    --light-gray: #1A1A1A;
     --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #B8860B 100%);
-    --gradient-dark: linear-gradient(135deg, #2C1810 0%, #4A2C2A 100%);
-    --shadow-sm: 0 2px 10px rgba(0,0,0,0.1);
-    --shadow-md: 0 5px 20px rgba(0,0,0,0.15);
-    --shadow-lg: 0 10px 40px rgba(0,0,0,0.2);
+    --gradient-dark: linear-gradient(135deg, #000000 0%, #1A1A1A 100%);
+    --gradient-black-gold: linear-gradient(135deg, #000000 0%, #D4AF37 100%);
+    --shadow-sm: 0 2px 10px rgba(212, 175, 55, 0.3);
+    --shadow-md: 0 5px 20px rgba(212, 175, 55, 0.4);
+    --shadow-lg: 0 10px 40px rgba(212, 175, 55, 0.5);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -31,8 +32,8 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: var(--black);
-    background-color: var(--white);
+    color: var(--gray);
+    background-color: var(--black);
     overflow-x: hidden;
 }
 
@@ -54,9 +55,10 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(0, 0, 0, 0.98);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-sm);
+    border-bottom: 1px solid var(--primary-gold);
     z-index: 1000;
     transition: var(--transition);
 }
@@ -79,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--dark-purple);
+    color: var(--primary-gold);
     font-family: 'Playfair Display', serif;
     cursor: pointer;
 }
@@ -100,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-link {
     text-decoration: none;
-    color: var(--black);
+    color: var(--gray);
     font-weight: 500;
     position: relative;
     transition: var(--transition);
@@ -135,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
     background: none;
     border: none;
     font-size: 1.2rem;
-    color: var(--black);
+    color: var(--gray);
     cursor: pointer;
     position: relative;
     transition: var(--transition);
@@ -174,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-menu-btn span {
     width: 25px;
     height: 3px;
-    background: var(--black);
+    background: var(--primary-gold);
     margin: 3px 0;
     transition: var(--transition);
     border-radius: 3px;
@@ -315,7 +317,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-title {
     font-size: clamp(2rem, 4vw, 3rem);
-    color: var(--dark-purple);
+    color: var(--primary-gold);
     margin-bottom: 1rem;
     position: relative;
     display: inline-block;
@@ -344,10 +346,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .collection-card {
-    background: var(--white);
+    background: var(--dark-black);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: var(--shadow-md);
+    border: 1px solid var(--primary-gold);
     transition: var(--transition);
     cursor: pointer;
 }
@@ -389,7 +392,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .collection-card h3 {
     padding: 20px 20px 10px;
-    color: var(--dark-purple);
+    color: var(--primary-gold);
 }
 
 .collection-card p {
@@ -417,7 +420,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Perfume Creator Section */
 .perfume-creator {
     padding: 100px 0;
-    background: var(--white);
+    background: var(--black);
 }
 
 .creator-container {
@@ -425,6 +428,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 20px;
     padding: 40px;
     box-shadow: var(--shadow-lg);
+    border: 1px solid var(--primary-gold);
 }
 
 .creator-steps {
@@ -499,7 +503,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .step-content h3 {
-    color: var(--dark-purple);
+    color: var(--primary-gold);
     margin-bottom: 10px;
 }
 
@@ -521,11 +525,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fragrance-card {
-    background: var(--white);
+    background: var(--dark-black);
     border-radius: 15px;
     padding: 25px;
     text-align: center;
     box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(212, 175, 55, 0.3);
     transition: var(--transition);
     cursor: pointer;
 }
@@ -546,7 +551,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fragrance-card h4 {
-    color: var(--dark-purple);
+    color: var(--primary-gold);
     margin-bottom: 10px;
 }
 
@@ -615,15 +620,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .perfume-details h4 {
-    color: var(--dark-purple);
+    color: var(--primary-gold);
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
 
 .blend-composition {
-    background: var(--white);
+    background: var(--dark-black);
     padding: 20px;
     border-radius: 10px;
+    border: 1px solid var(--primary-gold);
     margin-bottom: 20px;
 }
 
@@ -640,7 +646,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .note-label {
     font-weight: 600;
-    color: var(--dark-purple);
+    color: var(--primary-gold);
 }
 
 .note-value {
@@ -662,15 +668,17 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     margin-bottom: 5px;
     font-weight: 600;
-    color: var(--dark-purple);
+    color: var(--primary-gold);
 }
 
 .option-group select,
 .option-group input {
     width: 100%;
     padding: 10px;
-    border: 2px solid #ddd;
+    background: var(--dark-black);
+    border: 2px solid var(--primary-gold);
     border-radius: 8px;
+    color: var(--gray);
     font-size: 1rem;
     transition: var(--transition);
 }
@@ -678,7 +686,8 @@ h1, h2, h3, h4, h5, h6 {
 .option-group select:focus,
 .option-group input:focus {
     outline: none;
-    border-color: var(--primary-gold);
+    border-color: var(--secondary-gold);
+    color: var(--primary-gold);
 }
 
 .price-display {
@@ -687,7 +696,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     font-weight: 700;
-    color: var(--dark-purple);
+    color: var(--primary-gold);
 }
 
 .price-value {
@@ -710,7 +719,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Products Section */
 .products {
     padding: 100px 0;
-    background: var(--white);
+    background: var(--light-gray);
 }
 
 .product-filters {
@@ -723,21 +732,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .filter-btn {
     padding: 10px 25px;
-    background: var(--white);
-    border: 2px solid #ddd;
+    background: var(--dark-black);
+    border: 2px solid var(--primary-gold);
     border-radius: 25px;
+    color: var(--gray);
     cursor: pointer;
     font-weight: 600;
     transition: var(--transition);
 }
 
 .filter-btn:hover {
-    border-color: var(--primary-gold);
+    border-color: var(--secondary-gold);
+    color: var(--primary-gold);
 }
 
 .filter-btn.active {
     background: var(--gradient-gold);
-    color: var(--white);
+    color: var(--black);
     border-color: var(--primary-gold);
 }
 
@@ -748,10 +759,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-card {
-    background: var(--white);
+    background: var(--dark-black);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: var(--shadow-sm);
+    border: 1px solid var(--primary-gold);
     transition: var(--transition);
     position: relative;
 }
@@ -835,7 +847,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-info h4 {
-    color: var(--dark-purple);
+    color: var(--primary-gold);
     margin-bottom: 8px;
 }
 
@@ -873,7 +885,7 @@ h1, h2, h3, h4, h5, h6 {
 .price {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--dark-purple);
+    color: var(--primary-gold);
 }
 
 .original-price {
@@ -902,7 +914,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Features Section */
 .features {
     padding: 80px 0;
-    background: var(--light-gray);
+    background: var(--black);
 }
 
 .features-grid {
@@ -922,7 +934,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .feature h4 {
-    color: var(--dark-purple);
+    color: var(--primary-gold);
     margin-bottom: 10px;
 }
 
@@ -964,9 +976,16 @@ h1, h2, h3, h4, h5, h6 {
 .newsletter-form input {
     flex: 1;
     padding: 15px 20px;
-    border: none;
+    background: var(--dark-black);
+    border: 2px solid var(--primary-gold);
     border-radius: 50px;
+    color: var(--gray);
     font-size: 1rem;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: var(--secondary-gold);
 }
 
 .newsletter-form button {
@@ -1066,11 +1085,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cart-content {
-    background: var(--white);
+    background: var(--dark-black);
     width: 90%;
     max-width: 500px;
     max-height: 80vh;
     border-radius: 20px;
+    border: 1px solid var(--primary-gold);
     overflow: hidden;
     animation: slideUp 0.3s ease-out;
 }
@@ -1084,7 +1104,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cart-header h3 {
-    color: var(--dark-purple);
+    color: var(--primary-gold);
 }
 
 .close-cart {
@@ -1126,7 +1146,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .cart-item-name {
     font-weight: 600;
-    color: var(--dark-purple);
+    color: var(--primary-gold);
     margin-bottom: 5px;
 }
 
@@ -1171,7 +1191,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 20px;
-    color: var(--dark-purple);
+    color: var(--primary-gold);
 }
 
 .total-price {
